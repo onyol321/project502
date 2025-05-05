@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 app.post('/api/submit', async (req, res) => {
   const origin = req.headers.origin;
   if (!allowedOrigin.includes(origin)) {
-    return res.status(400).send('tanga mo naman sabi ni kris');
+    return res.status(400).send('tulog ka muna sabi ni bogart');
   }
 
   const { cookie, url, amount, interval } = req.body;
